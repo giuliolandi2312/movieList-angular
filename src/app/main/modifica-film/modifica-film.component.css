@@ -1,0 +1,10 @@
+.btn {
+    background-color:brown;
+    width: 7em;
+    color:white;
+    border: white;
+}
+
+input {
+    margin: 10px;
+}

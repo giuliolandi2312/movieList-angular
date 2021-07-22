@@ -1,0 +1,22 @@
+<h1 style="color: white;">Aggiungi Film</h1>
+<form  class="bg-dark"name="addform" novalidate id="addform" #addform="ngForm" (ngSubmit)="create()">
+<div class="row">
+    <div class="col-4">
+        <label for="title"></label>
+        <h3>Aggiungi titolo:</h3>
+        <input type="text" id="title" #title="ngModel" class="form-control" name="title" [(ngModel)]="newmovie.title"required>
+        <h3>Aggiungi immagine:</h3>
+        <input type="text" id="image" #image="ngModel" class="form-control" name="image" [(ngModel)]="newmovie.image" required>
+        <h3>Aggiungi trama:</h3>
+        <input type="text" id="plot" #plot="ngModel" class="form-control" name="plot" [(ngModel)]="newmovie.plot" required>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-4 mt-3">
+            <button type="text" class="btn m-2" (click)="create()">Aggiungi</button>
+            </div>
+        </div>
+</form>
+
+
+<!--<pre>{{newmovie | json }}</pre>-->

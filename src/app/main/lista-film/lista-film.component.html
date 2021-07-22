@@ -1,0 +1,12 @@
+
+<div class="container-fluid my-5 p-3 bg-dark" *ngFor="let movie of movielist; let i=index">
+  <h1>{{movie.title}}</h1>
+  <div class="d-flex">
+  <div><img [src]="movie.image" class="card-img-top" [alt]="movie.title"></div>
+  <div class="mb-3 p-5">
+    <p>{{movie.plot }}</p>
+    <button class="btn btn m-1 " (click)="viewDetail(movie.id)">SCOPRI</button>
+    <button class="btn btn m-1 " (click)="editDetail(movie.id)">MODIFICA</button>
+  </div>
+</div>
+</div>
